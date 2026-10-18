@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>宜蘭 12 人包棟民宿比較表 (12/31 ~ 1/2)</title>
+    <style>
+        :root {
+            --primary-gradient: linear-gradient(135deg, #FF6B6B 0%, #FF8E53 50%, #FFA07A 100%);
+            --bg-color: #FFF9F5;
+            --card-bg: #FFFFFF;
+            --text-main: #2D3748;
+            --text-muted: #718096;
+            --accent-color: #FF6B6B;
+            --shadow: 0 10px 25px -5px rgba(255, 107, 107, 0.15), 0 8px 10px -6px rgba(255, 107, 107, 0.1);
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 900px;
+            background: var(--card-bg);
+            border-radius: 24px;
+            box-shadow: var(--shadow);
+            overflow: hidden;
+            border: 2px solid rgba(255, 107, 107, 0.2);
+        }
+
+        .header {
+            background: var(--primary-gradient);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        .header h1 {
+            margin: 0 0 10px 0;
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.25);
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+            backdrop-filter: blur(4px);
+        }
+
+        .table-responsive {
+            overflow-x: auto;
+            padding: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+            white-space: nowrap;
+        }
+
+        th {
+            background-color: #FFF0EB;
+            color: var(--accent-color);
+            font-weight: 700;
+            padding: 16px 14px;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        td {
+            padding: 18px 14px;
+            border-bottom: 1px solid #EDF2F7;
+            font-size: 14px;
+            vertical-align: middle;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        tr:hover {
+            background-color: #FFFDFB;
+        }
+
+        .villa-link {
+            color: #FF5252;
+            text-decoration: none;
+            font-weight: 700;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: color 0.2s;
+        }
+
+        .villa-link:hover {
+            color: #E03E3E;
+            text-decoration: underline;
+        }
+
+        .villa-link::after {
+            content: "↗";
+            font-size: 12px;
+        }
+
+        .price-total {
+            font-weight: 600;
+            color: #2D3748;
+        }
+
+        .price-sub {
+            font-size: 12px;
+            color: var(--text-muted);
+            margin-top: 2px;
+        }
+
+        .price-per-person {
+            font-weight: 700;
+            color: #FF6B6B;
+            background: #FFF0EB;
+            padding: 4px 8px;
+            border-radius: 6px;
+            display: inline-block;
+        }
+
+        .notes {
+            color: #4A5568;
+            font-size: 13px;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            .header h1 {
+                font-size: 20px;
+            }
+            th, td {
+                padding: 12px 10px;
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>宜蘭 12 人包棟民宿比較表</h1>
+        <div class="badge">📅 入住期間：12/31 ~ 1/2 (兩晚)</div>
+    </div>
+
+    <div class="table-responsive">
+        <table>
+            <thead>
+                <tr>
+                    <th>包棟名稱</th>
+                    <th>兩晚價格 (A+B)</th>
+                    <th>每人價格 (A+B)/12</th>
+                    <th>筆記</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="https://www.onevilla.tw/" target="_blank" class="villa-link">The One Villa</a></td>
+                    <td>
+                        <div class="price-total">$137,600</div>
+                        <div class="price-sub">$78,800 + $58,800</div>
+                    </td>
+                    <td><span class="price-per-person">約 $11,467 / 人</span></td>
+                    <td class="notes">供兩天早餐</td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.villav.tw/" target="_blank" class="villa-link">Villa V</a></td>
+                    <td>
+                        <div class="price-total">$109,600</div>
+                        <div class="price-sub">$62,800 + $46,800</div>
+                    </td>
+                    <td><span class="price-per-person">約 $9,133 / 人</span></td>
+                    <td class="notes">供兩天早餐</td>
+                </tr>
+                <tr>
+                    <td><a href="https://sisland.elbnb.com/" target="_blank" class="villa-link">S island 松語墨居</a></td>
+                    <td>
+                        <div class="price-total">$90,000</div>
+                        <div class="price-sub">兩晚總價</div>
+                    </td>
+                    <td><span class="price-per-person">$7,500 / 人</span></td>
+                    <td class="notes">僅第二天早餐</td>
+                </tr>
+                <tr>
+                    <td><a href="https://ningxiainnn.com/%E5%AF%97%E5%A4%8F%E5%A4%AA%E6%9C%89%E6%B0%9B%E5%9C%8D%E6%84%9F-%E7%9C%8B%E6%B5%B7%E8%B2%B3%E9%A4%A8%E7%92%B0%E5%A2%83%E4%BB%8B%E7%B4%B9/" target="_blank" class="villa-link">甯夏看海</a></td>
+                    <td>
+                        <div class="price-total">$87,600</div>
+                        <div class="price-sub">$56,800 + $30,800</div>
+                    </td>
+                    <td><span class="price-per-person">$7,300 / 人</span></td>
+                    <td class="notes">供兩天早餐，多數是三人房型</td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.milan-yilan.com/" target="_blank" class="villa-link">米蘭穀堡</a></td>
+                    <td>
+                        <div class="price-total">$47,800</div>
+                        <div class="price-sub">$26,000 + $21,800</div>
+                    </td>
+                    <td><span class="price-per-person">約 $3,983 / 人</span></td>
+                    <td class="notes">供兩天早餐</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+</body>
+</html>
